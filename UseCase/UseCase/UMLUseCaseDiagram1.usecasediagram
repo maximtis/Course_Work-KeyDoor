@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="54cf255c-5e14-44c8-b134-be5449fe8376" name="UMLUseCaseDiagram1" linkedPackageId="cc15b065-826c-4881-ba87-822cbb22c1de" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="1e4f5953-13f6-4f42-b9ef-c5834e69426c">
+      <elementDefinition Id="176974b9-1bb8-46b9-9dd9-ff3fc9627b6e" />
+      <body>При Открытой двери, нажатой кнопке "КОНТРОЛЬ"
+</body>
+      <annotatedElements>
+        <useCaseMoniker Id="0ec985fe-5ec3-41a1-a5d0-70e5050c66b0" LastKnownName="Сменить пароль" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b1695418-9bc0-4fb4-9728-26698fe7cc4e">
+      <elementDefinition Id="2ab2aa74-11bc-414f-bb02-d153d284a2e6" />
+      <body>При Открытой двери, нажатой кнопке "ВЫЗОВ"
+</body>
+      <annotatedElements>
+        <useCaseMoniker Id="25cf1b56-8133-40ee-bb7d-7384546f36fc" LastKnownName="Сменить контрольный код" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="764f81e2-0022-4410-b6ba-6e986b878967">
+      <profileInstance Id="a49f0052-fa89-4519-9b2f-2d688479725a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="11609c7d-1225-4c22-97e2-6e1c0f8e76cd">
+      <profileInstance Id="bd1bc0aa-fabf-4cef-aa0b-9b94481c4761" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9bbc77f0-c669-4dee-9e23-7bb22b188be4" name="Человек Снаружи" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e4ad61b-0120-43b8-b718-2ecc633ada3e" />
+        <targetEnds>
+          <association Id="a6bcb63f-cc01-4e15-aa8e-85a8dc47e014" isDerived="false" sourceEndRoleName="Человек Снаружи" targetEndRoleName="Позвонить" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6becb423-acd5-48f7-99b7-bae00a055612" LastKnownName="Позвонить" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e9039a3-e6a2-44ce-9c94-195597172285" name="Человек Снаружи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3a8e34b0-6d63-4bcc-96cc-8c0713629832" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2f78a78-124c-45cd-9bbe-75d4e31a3d26" name="Позвонить" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ae4ddbe6-a09f-40c8-9590-9827d05d0723" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="57be4e23-b4a1-4445-8bf5-17102c30bddd" />
+          </association>
+          <association Id="bd153d8f-8042-40e9-aa0f-4b29a7d646fd" isDerived="false" sourceEndRoleName="Человек Снаружи" targetEndRoleName="Сменить пароль" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0ec985fe-5ec3-41a1-a5d0-70e5050c66b0" LastKnownName="Сменить пароль" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be3bcd4e-897d-4c23-b518-4e319ec8f072" name="Человек Снаружи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35749e87-8808-4ed5-9037-74466ad8b1d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e5b547f-345c-4be4-939c-d2a278270e79" name="Сменить пароль" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="773aee48-cc9e-4059-bd4b-6cc26f98d07b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eaaf7209-802b-4ee9-b7dc-a73392ae4fe2" />
+          </association>
+          <association Id="73cc7e4d-0ede-40dd-9b84-1a9386991b29" isDerived="false" sourceEndRoleName="Человек Снаружи" targetEndRoleName="Открыть дверь" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="224b5a7e-e991-4d39-ab03-8f0c150a0bdd" LastKnownName="Открыть дверь" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c46326fa-20c4-4e25-969f-070ae1c81e16" name="Человек Снаружи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21f93257-9ccc-4cde-a27e-d6142b63615d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dc646d9-91f2-4b89-8f7d-e5b1bea9d24a" name="Открыть дверь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="009ab24b-79bd-4c79-89a2-2325be83470c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c03035b-9d12-4c1c-a838-5a1e85b2febc" />
+          </association>
+          <association Id="8974269a-32da-4166-8f0a-add469ee96d4" isDerived="false" sourceEndRoleName="Человек Снаружи" targetEndRoleName="Сменить контрольный код" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="25cf1b56-8133-40ee-bb7d-7384546f36fc" LastKnownName="Сменить контрольный код" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f562c972-d8a0-4667-94b4-70991a111242" name="Человек Снаружи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5b62036e-031f-4138-a73e-1f64c7521731" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de37ff8b-c671-4812-97ba-84a6bb81d2c7" name="Сменить контрольный код" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9f56e67f-ea9a-4baf-a581-17d1738ea0de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="001a1a0d-428f-4723-a161-db323870310b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c8d3b3cf-eae0-4628-a7e5-018974241d24" name="Человек Внутри" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af88ac5f-42c9-4dee-bf28-f58dfb650329" />
+        <targetEnds>
+          <association Id="77647df8-7343-4643-afb8-b28d2138d21f" isDerived="false" sourceEndRoleName="Человек Внутри" targetEndRoleName="Открыть дверь" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="224b5a7e-e991-4d39-ab03-8f0c150a0bdd" LastKnownName="Открыть дверь" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90577e54-b49b-4e3f-b621-07cfff32d8ec" name="Человек Внутри" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5d2c2ab6-950a-46f8-9a7e-cd6631938b6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="934f73aa-7c7e-46e8-85b4-07df1fa66c36" name="Открыть дверь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b38bde9-f698-4c1f-94bb-8113fce2a4af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa4661fd-f627-489e-99fd-915cc7c97539" />
+          </association>
+          <association Id="0c9006ff-f157-4e11-a50a-52a346b7f9fc" isDerived="false" sourceEndRoleName="Человек Внутри" targetEndRoleName="Принять вызов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c37fb512-63ab-4547-9449-ee3af0d6f58d" LastKnownName="Принять вызов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1db0c94-1054-44ef-8075-d815f2bc3d46" name="Человек Внутри" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cc7cdd36-445f-45c7-ab57-4e46beeab5f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab222252-d141-4375-8d1b-7c9a9f760edb" name="Принять вызов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2e16fffe-cd3d-4438-be73-d224290b0e77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c8aac86-6ca0-4296-8c07-923aa7524bb0" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="224b5a7e-e991-4d39-ab03-8f0c150a0bdd" name="Открыть дверь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="21cd8ab6-7d51-4e7a-9d02-2251534beab2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0ec985fe-5ec3-41a1-a5d0-70e5050c66b0" name="Сменить пароль" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ac1a47f8-45c4-4039-ab00-79683d462739" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6becb423-acd5-48f7-99b7-bae00a055612" name="Позвонить" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60159884-42ba-4f15-bac6-232ab7798a9b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="25cf1b56-8133-40ee-bb7d-7384546f36fc" name="Сменить контрольный код" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e10fdb55-a4b5-4210-9ac0-eec38f248837" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c37fb512-63ab-4547-9449-ee3af0d6f58d" name="Принять вызов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5778946b-c271-490c-bdce-0df0e0e21d42" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="cc15b065-826c-4881-ba87-822cbb22c1de" name="UseCase">
+    <elementDefinition Id="97e7847e-6790-45ea-87a9-bc4ce695f79d" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0bb21359-78f1-43f5-90cf-840dc1db47a5" name="UMLClassDiagram1" linkedPackageId="cdcdc8dc-9fc5-4dbe-945c-72071b96531e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7feaf6dd-41c9-46d9-916b-2a65ab9da260" name="Inner" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="005dfa51-5637-4e3e-a53d-adddc06dc411" />
+        <targetEnds>
+          <association Id="0eab4a6e-98dd-401b-bf05-f533bd0f211d" isDerived="false" sourceEndRoleName="Inner" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d475557e-c60f-4114-95ea-89cac09cbe9e" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abd72c79-3053-4adb-8dbf-861ce7e55cdf" name="Inner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff71e554-ba98-4e5f-977b-a08c446bb2b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cd7de3e-b83f-4a2e-b594-a2ab1058fed1" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="c03d68c2-fdfc-416c-b583-16ce05ff17bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fac17b9a-cf7a-41a1-9b39-e4b3a6c708f0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9968e951-1032-4259-93c7-424edc4e3625" name="enter_Panel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="46c1638e-7dcd-46fd-a296-0d22d445c75b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6ab2c71e-9ef9-4c07-a7c5-54df38fa2f40" name="PanelChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4075bd5-25a2-48d9-89ec-35c1be3dc513" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ce4b6a0a-1f9a-481a-b0b4-9edba77425fd" name="Lock" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9eca1183-d7e0-4eae-8b9f-b12ad91e75a4" />
+        <targetEnds>
+          <association Id="11f1ffe7-26fa-4d84-92bf-7bb430b8ebb3" isDerived="false" sourceEndRoleName="Lock" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d475557e-c60f-4114-95ea-89cac09cbe9e" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51cabb86-af1f-4279-aeba-942bc8b7193f" name="Lock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="475cc8e7-88f4-47b3-94b9-a68c4009c044" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04f97610-0c93-4bbd-9bfe-226e2f83cd81" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="37c58aa0-3865-46e6-b98c-1afc21f6ba73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1361cc23-84c8-49c3-a102-2e187c68de07" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="069d8563-b184-4f14-9d12-87f91b938bd7" name="IsAccestToChangeControlPass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dc1fd81a-b31b-4fe7-9f43-f472d985f01d" />
+          </property>
+          <property Id="cc06218e-e023-4af3-8472-b9580b623063" name="NewControlPass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94c194ce-6855-4e49-9b04-58ac3ca5a33d" />
+          </property>
+          <property Id="85e1d685-6e30-4c8f-a0f0-7cfde6f5bde0" name="IsOpen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="47f3aa37-770f-49ae-a6a6-e70b2af86477" />
+          </property>
+          <property Id="25dd3bd0-01f4-4041-94d3-e7d1173ac8f2" name="Control_Pass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="927e2748-4fd8-4322-9230-8b2d6bd318f8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d0264730-addd-4a6a-8d65-af0f215cb22a" name="FinalChangePass_Run" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48c61205-9b61-4320-8e3d-70798dad694d" />
+          </operation>
+          <operation Id="99d0d2a8-27a0-4340-b6f8-c15d404ba7b3" name="IsCorrectPass" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5d018c86-e7ee-4a49-a188-8733d5e61604" />
+          </operation>
+          <operation Id="f9dd8624-56f8-4398-81ae-c6691587f8ce" name="Error_Button" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="117cb272-bce3-4062-8d74-3b0ea850898f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9c1c0c91-138d-4265-a79a-36c23c0a5bc5" name="ProcessRun" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="28397727-5f3f-40b1-bf1b-577be807d4d9" />
+        <targetEnds>
+          <association Id="aea9b63e-a79c-4fed-860c-3a8402e7e983" isDerived="false" sourceEndRoleName="ProcessRun" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d475557e-c60f-4114-95ea-89cac09cbe9e" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40f9fdd5-7c06-41ad-9428-68b873156ccb" name="ProcessRun" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6cf0016d-2d3c-4d0b-80b4-ab088d512a46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="141202b8-6921-4e53-8a26-4b34ab5d3699" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="9a2dad43-b340-444d-945a-ab9b69b9eb5b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bf38f231-98d4-4b3e-ac62-717b8f085243" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="fb7de4da-ec15-4ee1-bfcb-23fd3edc7c05" name="WaitTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b89d56d8-e533-4551-8e1f-f1a75ac14b95" />
+          </property>
+          <property Id="d775a707-df24-431b-86a1-8123c2b578c1" name="CallWaitTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc8bf161-bf6b-4d0d-a34d-f8836c89a7f8" />
+          </property>
+          <property Id="6b332847-f0ac-4d7b-b047-c9b9072b5c59" name="OpenWaitTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="47d1cc9b-b354-42df-93af-7636d1b3bec5" />
+          </property>
+          <property Id="6fdf8c92-09f4-434a-8edf-a4790430ac98" name="TalkWaitTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e03b1322-f6eb-4612-9d04-98ece621167e" />
+          </property>
+          <property Id="136bea5a-5d5e-4068-a072-74a631e3cc05" name="ChangeCPassTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="938e6a7d-3c1a-4180-87e8-84231c852137" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5ce94570-3484-4f88-b3d4-583051b5de96" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6d7e100f-3f83-4ba5-8a49-1ab463f4d943" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d475557e-c60f-4114-95ea-89cac09cbe9e" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf2a7df3-4c6d-4719-b6d6-adbeabce6d83" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a5c37f2e-9b65-4abd-973b-8d12ab4e0ec9" name="NumberBoard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="60bec1d0-d523-4aa2-9715-95c540afcec2" />
+        <targetEnds>
+          <association Id="acb901c7-3ff9-406e-97ce-05835b1fa8f8" isDerived="false" sourceEndRoleName="NumberBoard" targetEndRoleName="MainWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d475557e-c60f-4114-95ea-89cac09cbe9e" LastKnownName="MainWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c48eee6d-841b-4de6-9e46-2a7158337fc7" name="NumberBoard" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5492ed7e-4f53-43a1-84cf-50fce810f404" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4479f2f6-0478-4c2c-9b1b-367027a88219" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b06802ce-cd24-439a-bf22-f4aaac1507fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fb31d00d-1284-4b3b-a977-85b9df51b7ca" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3451662e-eb9a-4b43-a756-32f778719512" name="ActiveButton" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9085d301-8ebe-422e-b675-e1c312cef2bb" />
+          </property>
+          <property Id="17986dc9-40b2-473a-9c5b-0e6eb18e821b" name="Enter_Panel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bacff7df-09eb-44ac-b986-226c50c558ab" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="36fed019-1334-4361-bd7a-0a38c0898623" name="CloseTone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03464a81-60fc-4e1c-ae8a-0cd00eb83abe" />
+          </operation>
+          <operation Id="292daf78-82ba-4fe1-8ccb-386ca3cd2407" name="CallTone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6b321da2-303d-4265-858a-ccd411271861" />
+          </operation>
+          <operation Id="4227d6c7-e7e5-4867-978f-dad1dfea596b" name="EndCallTone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="511269cd-8f12-46bc-93ae-aad51f4e2d04" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="cdcdc8dc-9fc5-4dbe-945c-72071b96531e" name="UseCase">
+    <elementDefinition Id="97e7847e-6790-45ea-87a9-bc4ce695f79d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d0a1448f-67bf-4c7f-b444-a4f4dfce1bb6">
+        <profileInstance Id="303c351d-94eb-4790-8f48-bcfd2a08ca2d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="38e24984-9545-4582-8070-934c07016a00">
+        <profileInstance Id="67162acd-9b35-4a38-bc3d-5bfca79e6357" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="97e7847e-6790-45ea-87a9-bc4ce695f79d"
+  name="UseCase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="176974b9-1bb8-46b9-9dd9-ff3fc9627b6e">
+      <body>При Открытой двери, нажатой кнопке "КОНТРОЛЬ"
+</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="ac1a47f8-45c4-4039-ab00-79683d462739"
+          LastKnownName="Сменить пароль"
+          LastKnownLocation="UseCase.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="2ab2aa74-11bc-414f-bb02-d153d284a2e6">
+      <body>При Открытой двери, нажатой кнопке "ВЫЗОВ"
+</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="e10fdb55-a4b5-4210-9ac0-eec38f248837"
+          LastKnownName="Сменить контрольный код"
+          LastKnownLocation="UseCase.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="0e4ad61b-0120-43b8-b718-2ecc633ada3e"
+        name="Человек Снаружи"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="57be4e23-b4a1-4445-8bf5-17102c30bddd"
+            isDerived="false"
+            sourceEndRoleName="Человек Снаружи"
+            targetEndRoleName="Позвонить"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="60159884-42ba-4f15-bac6-232ab7798a9b"
+              LastKnownName="Позвонить"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a8e34b0-6d63-4bcc-96cc-8c0713629832"
+                  name="Человек Снаружи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae4ddbe6-a09f-40c8-9590-9827d05d0723"
+                  name="Позвонить"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eaaf7209-802b-4ee9-b7dc-a73392ae4fe2"
+            isDerived="false"
+            sourceEndRoleName="Человек Снаружи"
+            targetEndRoleName="Сменить пароль"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ac1a47f8-45c4-4039-ab00-79683d462739"
+              LastKnownName="Сменить пароль"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35749e87-8808-4ed5-9037-74466ad8b1d3"
+                  name="Человек Снаружи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="773aee48-cc9e-4059-bd4b-6cc26f98d07b"
+                  name="Сменить пароль"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0c03035b-9d12-4c1c-a838-5a1e85b2febc"
+            isDerived="false"
+            sourceEndRoleName="Человек Снаружи"
+            targetEndRoleName="Открыть дверь"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="21cd8ab6-7d51-4e7a-9d02-2251534beab2"
+              LastKnownName="Открыть дверь"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21f93257-9ccc-4cde-a27e-d6142b63615d"
+                  name="Человек Снаружи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="009ab24b-79bd-4c79-89a2-2325be83470c"
+                  name="Открыть дверь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="001a1a0d-428f-4723-a161-db323870310b"
+            isDerived="false"
+            sourceEndRoleName="Человек Снаружи"
+            targetEndRoleName="Сменить контрольный код"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e10fdb55-a4b5-4210-9ac0-eec38f248837"
+              LastKnownName="Сменить контрольный код"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b62036e-031f-4138-a73e-1f64c7521731"
+                  name="Человек Снаружи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f56e67f-ea9a-4baf-a581-17d1738ea0de"
+                  name="Сменить контрольный код"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="af88ac5f-42c9-4dee-bf28-f58dfb650329"
+        name="Человек Внутри"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="aa4661fd-f627-489e-99fd-915cc7c97539"
+            isDerived="false"
+            sourceEndRoleName="Человек Внутри"
+            targetEndRoleName="Открыть дверь"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="21cd8ab6-7d51-4e7a-9d02-2251534beab2"
+              LastKnownName="Открыть дверь"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d2c2ab6-950a-46f8-9a7e-cd6631938b6f"
+                  name="Человек Внутри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b38bde9-f698-4c1f-94bb-8113fce2a4af"
+                  name="Открыть дверь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1c8aac86-6ca0-4296-8c07-923aa7524bb0"
+            isDerived="false"
+            sourceEndRoleName="Человек Внутри"
+            targetEndRoleName="Принять вызов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5778946b-c271-490c-bdce-0df0e0e21d42"
+              LastKnownName="Принять вызов"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc7cdd36-445f-45c7-ab57-4e46beeab5f3"
+                  name="Человек Внутри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e16fffe-cd3d-4438-be73-d224290b0e77"
+                  name="Принять вызов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21cd8ab6-7d51-4e7a-9d02-2251534beab2"
+        name="Открыть дверь"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ac1a47f8-45c4-4039-ab00-79683d462739"
+        name="Сменить пароль"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="60159884-42ba-4f15-bac6-232ab7798a9b"
+        name="Позвонить"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e10fdb55-a4b5-4210-9ac0-eec38f248837"
+        name="Сменить контрольный код"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5778946b-c271-490c-bdce-0df0e0e21d42"
+        name="Принять вызов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="005dfa51-5637-4e3e-a53d-adddc06dc411"
+        name="Inner"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fac17b9a-cf7a-41a1-9b39-e4b3a6c708f0"
+            isDerived="false"
+            sourceEndRoleName="Inner"
+            targetEndRoleName="MainWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cf2a7df3-4c6d-4719-b6d6-adbeabce6d83"
+              LastKnownName="MainWindow"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff71e554-ba98-4e5f-977b-a08c446bb2b1"
+                  name="Inner"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c03d68c2-fdfc-416c-b583-16ce05ff17bd"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="46c1638e-7dcd-46fd-a296-0d22d445c75b"
+            name="enter_Panel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c4075bd5-25a2-48d9-89ec-35c1be3dc513"
+            name="PanelChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9eca1183-d7e0-4eae-8b9f-b12ad91e75a4"
+        name="Lock"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1361cc23-84c8-49c3-a102-2e187c68de07"
+            isDerived="false"
+            sourceEndRoleName="Lock"
+            targetEndRoleName="MainWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cf2a7df3-4c6d-4719-b6d6-adbeabce6d83"
+              LastKnownName="MainWindow"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="475cc8e7-88f4-47b3-94b9-a68c4009c044"
+                  name="Lock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37c58aa0-3865-46e6-b98c-1afc21f6ba73"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dc1fd81a-b31b-4fe7-9f43-f472d985f01d"
+            name="IsAccestToChangeControlPass"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="94c194ce-6855-4e49-9b04-58ac3ca5a33d"
+            name="NewControlPass"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="47f3aa37-770f-49ae-a6a6-e70b2af86477"
+            name="IsOpen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="927e2748-4fd8-4322-9230-8b2d6bd318f8"
+            name="Control_Pass"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="48c61205-9b61-4320-8e3d-70798dad694d"
+            name="FinalChangePass_Run"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5d018c86-e7ee-4a49-a188-8733d5e61604"
+            name="IsCorrectPass"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="117cb272-bce3-4062-8d74-3b0ea850898f"
+            name="Error_Button"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="28397727-5f3f-40b1-bf1b-577be807d4d9"
+        name="ProcessRun"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="bf38f231-98d4-4b3e-ac62-717b8f085243"
+            isDerived="false"
+            sourceEndRoleName="ProcessRun"
+            targetEndRoleName="MainWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cf2a7df3-4c6d-4719-b6d6-adbeabce6d83"
+              LastKnownName="MainWindow"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cf0016d-2d3c-4d0b-80b4-ab088d512a46"
+                  name="ProcessRun"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a2dad43-b340-444d-945a-ab9b69b9eb5b"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b89d56d8-e533-4551-8e1f-f1a75ac14b95"
+            name="WaitTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cc8bf161-bf6b-4d0d-a34d-f8836c89a7f8"
+            name="CallWaitTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="47d1cc9b-b354-42df-93af-7636d1b3bec5"
+            name="OpenWaitTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e03b1322-f6eb-4612-9d04-98ece621167e"
+            name="TalkWaitTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="938e6a7d-3c1a-4180-87e8-84231c852137"
+            name="ChangeCPassTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6d7e100f-3f83-4ba5-8a49-1ab463f4d943"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cf2a7df3-4c6d-4719-b6d6-adbeabce6d83"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="60bec1d0-d523-4aa2-9715-95c540afcec2"
+        name="NumberBoard"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fb31d00d-1284-4b3b-a977-85b9df51b7ca"
+            isDerived="false"
+            sourceEndRoleName="NumberBoard"
+            targetEndRoleName="MainWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cf2a7df3-4c6d-4719-b6d6-adbeabce6d83"
+              LastKnownName="MainWindow"
+              LastKnownLocation="UseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5492ed7e-4f53-43a1-84cf-50fce810f404"
+                  name="NumberBoard"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b06802ce-cd24-439a-bf22-f4aaac1507fc"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9085d301-8ebe-422e-b675-e1c312cef2bb"
+            name="ActiveButton"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bacff7df-09eb-44ac-b986-226c50c558ab"
+            name="Enter_Panel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="03464a81-60fc-4e1c-ae8a-0cd00eb83abe"
+            name="CloseTone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6b321da2-303d-4265-858a-ccd411271861"
+            name="CallTone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="511269cd-8f12-46bc-93ae-aad51f4e2d04"
+            name="EndCallTone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

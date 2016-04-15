@@ -1,0 +1,279 @@
+﻿<Window x:Class="CourseWork_Kristina.MainWindow"
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="609.397" Width="975.5">
+
+    <Grid>
+        <Grid Name="BackGrid_EnterPanel" Margin="0,-1,0,0" Background="Black">
+            <Button 
+                Name="ToIn"
+                Background="Orange"
+                Foreground="White"
+                FontSize="20"
+                Content="Внутри" 
+                HorizontalAlignment="Left" 
+                Margin="864,10,0,0" 
+                VerticalAlignment="Top" 
+                Width="96" Height="31" Click="ToIn_Click"/>
+            
+            <Border Visibility="Hidden"
+                Name="Room_Panel"
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                HorizontalAlignment="Left" 
+                Height="642"
+                Margin="468,68,0,-129" 
+                VerticalAlignment="Top"
+                Width="356"/>
+
+            <Border 
+                Name="KeyLockPanel"
+                CornerRadius="50"
+                Margin="74,106,548,104" 
+                Background="DarkGray"
+                BorderThickness="1"
+                BorderBrush="Black">
+
+
+            </Border>
+            <TextBlock 
+                Name="TextBlock_Enter_Panel"
+                Background="Black"
+                TextWrapping="Wrap" 
+                Text=" "
+                FontSize="60"
+                Foreground="DarkRed"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="186" 
+                Margin="119,172,0,0" Height="92"/>
+
+            <Button Name="Button_1"
+                BorderThickness="2"
+                Background="DarkGray"
+                Content="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="52" 
+                Margin="119,300,0,0" Click="Button_1_Click" Height="32" Style="{DynamicResource ButtonStyle1}"/>
+            <Button Name="Button_2"
+                Content="2" 
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left" 
+                Margin="203,300,0,0"
+                VerticalAlignment="Top"
+                Width="56" Click="Button_2_Click" Height="32"/>
+            <Button Name="Button_5"
+                Content="5"
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+                Width="56"
+                Margin="203,340,0,0" Click="Button_5_Click" Height="32"/>
+            <Button Name="Button_8"
+                Content="8" 
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+                Width="56"
+                Margin="203,382,0,0" Click="Button_8_Click" Height="30"/>
+            <Button Name="Button_9"
+                Content="9"
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="52"
+                Margin="292,382,0,0" Click="Button_9_Click" Height="30"/>
+            <Button Name="Button_6"
+                Content="6"
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="52" 
+                Margin="292,340,0,0" Click="Button_6_Click" Height="32"/>
+            <Button Name="Button_7"
+                Content="7"
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="52" 
+                Margin="119,382,0,0" Click="Button_7_Click" Height="30"/>
+            <Button Name="Button_4"
+                Content="4"
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="52" 
+                Margin="119,340,0,0" Click="Button_4_Click" Height="32"/>
+            <Button Name="Button_3"
+                Content="3"
+                    BorderThickness="2"
+                    Background="DarkGray"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="52" 
+                Margin="292,300,0,0" Click="Button_3_Click" Height="32"/>
+            <Button Name="Button_Call"
+            	Content="Вызов"
+                    BorderThickness="2"
+                    Background="DarkGray"
+            	HorizontalAlignment="Left" 
+            	VerticalAlignment="Top" 
+            	Width="64"
+            	Margin="338,140,0,0" Height="56" Click="Button_Call_Click"/>
+            <Button Name="Button_0"
+            	Content="0"
+                    BorderThickness="2"
+                    Background="DarkGray"
+            	HorizontalAlignment="Left" 
+            	VerticalAlignment="Top" 
+            	Width="56"
+            	Margin="203,418,0,0" Height="32" Click="Button_0_Click"/>
+            <Button Name="Button_Control"
+            	Content="Контроль"
+                    BorderThickness="2"
+                    Background="DarkGray"
+            	HorizontalAlignment="Left" 
+            	VerticalAlignment="Top" 
+            	Width="64"
+            	Margin="338,208,0,0" Height="56" Click="Button_Control_Click" RenderTransformOrigin="0.5,0.5"/>
+
+
+        </Grid>
+
+        <Grid Name="BackGrid_ProtectedLock" 
+              Visibility="Hidden"
+              Margin="0,-1,0,0" Background="Black">
+
+            <Button 
+                Name="ToOut"
+                Background="Orange"
+                Foreground="White"
+                FontSize="20"
+                Content="Снаружи" 
+                HorizontalAlignment="Left" 
+                Margin="850,10,0,0" 
+                VerticalAlignment="Top" 
+                Width="96" Height="31" Click="Button_Click"/>
+
+
+            <Border  CornerRadius="20" Visibility="Visible" Name="InPanel" 
+              Background="White"
+            HorizontalAlignment="Left" 
+            Height="366" 
+            Margin="145,53,0,0"
+            VerticalAlignment="Top"
+            Width="212">
+                <TextBox 
+                    Name="TextBox_InPanel"
+            IsReadOnly="True"
+            Text=""
+            Background="Black"
+            Foreground="DarkRed"
+            TextAlignment="Center"
+            FontSize="50"
+            HorizontalAlignment="Left"
+            Height="78"
+            Margin="15,104,0,0" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" 
+            Width="184"/>
+            </Border>
+
+            <Button Name="Recive_Call"
+                    Visibility="Visible"
+            Content="Ответить"
+            BorderThickness="2"
+            HorizontalAlignment="Left"
+            Margin="236,286,0,0"
+            VerticalAlignment="Top"
+            Width="92" 
+            Height="42" Style="{DynamicResource ButtonStyle1}" Click="Recive_Call_Click">
+                <Button.Resources>
+                    <Style x:Key="FocusVisual">
+                        <Setter Property="Control.Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                    <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+                    <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+                    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+                    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+                    <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+                    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+                    <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+                    <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+                    <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+                    <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+                        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+                        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+                        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="1"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsDefaulted" Value="true">
+                                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                                        </Trigger>
+                                        <Trigger Property="IsMouseOver" Value="true">
+                                            <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="true">
+                                            <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                                        </Trigger>
+                                        <Trigger Property="IsEnabled" Value="false">
+                                            <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Name="Open_Lock"
+                    Visibility="Visible"
+            Content="Открыть"
+            BorderThickness="2"
+            HorizontalAlignment="Left" 
+            Margin="236,350,0,0" 
+            VerticalAlignment="Top"
+            Width="92" 
+            Height="42" Click="Open_Lock_Click"/>
+            <Border 
+                BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="182,77,0,0" VerticalAlignment="Top" Width="138"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="201,99,0,0" VerticalAlignment="Top" Width="100"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="182,125,0,0" VerticalAlignment="Top" Width="138"/>
+
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>

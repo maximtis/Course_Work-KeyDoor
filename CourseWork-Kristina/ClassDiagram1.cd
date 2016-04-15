@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CourseWork_Kristina.Inner">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAIAAAAAACAAAA=</HashCode>
+      <FileName>Inner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NumberBoard" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CourseWork_Kristina.PassLock">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KQAAgEhAAgCIAQAAAIgAQEAABgCIICoCACYQAgKAAEA=</HashCode>
+      <FileName>Lock.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProcessRun" />
+      <Property Name="Inner" />
+      <Property Name="NumberBoard" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CourseWork_Kristina.MainWindow">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiABAQBBJIAJCgEAIAABGgAEEAJAQAAGEgAAAEYCQ=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseWork_Kristina.NumberBoard">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAwAABEBAIIQAAAAAMAAAgEAABACAJAAAAAACABAA=</HashCode>
+      <FileName>NumberBoard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainWindow" />
+      <Property Name="ProcessRun" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CourseWork_Kristina.ProcessRun">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIJACQAECAAAACAAAAFkABAEAAJiggAAAAQABAMkAA=</HashCode>
+      <FileName>ProcessRun.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainWindow" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
