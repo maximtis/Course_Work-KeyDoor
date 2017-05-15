@@ -1,6 +1,6 @@
 # Course Work Key Door Simulator
 Course Work of Program Key Dor Simulator
 
-![Alt text](http://full/path/to/img.jpg "Optional title")
+![Key Dor Simulator](https://github.com/maximtis/Course_Work-KeyDoor/blob/master/door.JPG "Key Dor Simulator")
 
 
